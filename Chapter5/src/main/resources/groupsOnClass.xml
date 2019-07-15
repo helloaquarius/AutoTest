@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="guoupsSuiteName">
+    <test name="runAll">
+        <classes>
+            <class name="com.zongguo.testng.groups.GroupsOnClassOne"/>
+            <class name="com.zongguo.testng.groups.GroupsOnClassTwo"/>
+            <class name="com.zongguo.testng.groups.GroupsOnClassThree"/>
+        </classes>
+    </test>
+    <!-- run Stu-->
+    <test name="runStu">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.zongguo.testng.groups.GroupsOnClassOne"/>
+            <class name="com.zongguo.testng.groups.GroupsOnClassTwo"/>
+            <class name="com.zongguo.testng.groups.GroupsOnClassThree"/>
+        </classes>
+    </test>
+</suite>
